@@ -2,19 +2,24 @@
   <head>
   	<style>
   	 body { 
-
   	 	color: <%= bgcolor %>;
   	 }
   	</style>
   </head>
   <body>
     <p>
-     <!-- The Secret Number is <%= num %> -->
-      <%= message %>
+      <%=cheat%>
+      <br/>
+      You have <%=guesses%> guesses remaining
+      <br/>
+      
     </p>
     <form>
       <input type='text' name='guess' />
       <input type='submit' value='Guess!' />
     </form>
+    <p>
+    	<%= message %>
+    </p>
   </body>
 </html>
